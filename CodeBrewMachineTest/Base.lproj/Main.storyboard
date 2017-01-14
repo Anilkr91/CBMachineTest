@@ -19,16 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OES-DN-Er2">
-                                <rect key="frame" x="46" y="50" width="508" height="500"/>
+                                <rect key="frame" x="20" y="20" width="560" height="530"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zci-2L-2hr">
-                                        <rect key="frame" x="0.0" y="467" width="508" height="18"/>
+                                        <rect key="frame" x="0.0" y="497" width="560" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7WX-uy-D9n">
-                                        <rect key="frame" x="0.0" y="0.0" width="508" height="417"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="447"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,7 +50,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED2-vl-R4m">
-                                <rect key="frame" x="551" y="558" width="28.5" height="13.5"/>
+                                <rect key="frame" x="551.5" y="558" width="28.5" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,16 +58,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OES-DN-Er2" firstAttribute="top" secondItem="irw-RH-xHO" secondAttribute="bottom" constant="30" id="3UE-Cd-hCi"/>
+                            <constraint firstItem="OES-DN-Er2" firstAttribute="top" secondItem="irw-RH-xHO" secondAttribute="bottom" id="3UE-Cd-hCi"/>
                             <constraint firstItem="CT8-0D-qDK" firstAttribute="leading" secondItem="hZB-Ed-8av" secondAttribute="leadingMargin" id="4Rg-Kz-BGR"/>
                             <constraint firstItem="kWm-1u-uyF" firstAttribute="top" secondItem="OES-DN-Er2" secondAttribute="bottom" constant="50" id="A5l-ob-vjy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OES-DN-Er2" secondAttribute="trailing" constant="26" id="BgW-AQ-wxR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OES-DN-Er2" secondAttribute="trailing" id="BgW-AQ-wxR"/>
                             <constraint firstItem="ED2-vl-R4m" firstAttribute="width" relation="lessThanOrEqual" secondItem="CT8-0D-qDK" secondAttribute="width" id="GuQ-Lx-J5P"/>
                             <constraint firstItem="ED2-vl-R4m" firstAttribute="top" secondItem="OES-DN-Er2" secondAttribute="bottom" constant="8" id="NJE-YI-hXP"/>
                             <constraint firstItem="ED2-vl-R4m" firstAttribute="trailing" secondItem="hZB-Ed-8av" secondAttribute="trailingMargin" id="NVk-j3-VAh"/>
                             <constraint firstItem="CT8-0D-qDK" firstAttribute="top" secondItem="OES-DN-Er2" secondAttribute="bottom" constant="8" id="fHZ-hl-PPi"/>
                             <constraint firstItem="CT8-0D-qDK" firstAttribute="centerY" secondItem="ED2-vl-R4m" secondAttribute="centerY" id="hM3-25-eWd"/>
-                            <constraint firstItem="OES-DN-Er2" firstAttribute="leading" secondItem="hZB-Ed-8av" secondAttribute="leadingMargin" constant="26" id="qnw-Qt-hmp"/>
+                            <constraint firstItem="OES-DN-Er2" firstAttribute="leading" secondItem="hZB-Ed-8av" secondAttribute="leadingMargin" id="qnw-Qt-hmp"/>
                         </constraints>
                     </view>
                     <connections>

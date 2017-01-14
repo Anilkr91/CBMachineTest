@@ -26,7 +26,7 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
 
     func propertyFeed() {
         
-        let R  = Alamofire.request(.POST,  "http://54.254.204.73/api/property/feeds", parameters: ["lang": 0], encoding: .URLEncodedInURL, headers: nil).responseJSON { (request, response, data) in
+        Alamofire.request(.POST,  "http://54.254.204.73/api/property/feeds", parameters: ["lang": 0], encoding: .URLEncodedInURL, headers: nil).responseJSON { (request, response, data) in
             
             self.dataSource = self
             let jsonArray = GlossDataResponse<PropertyModel>(json: data.value as! [String: AnyObject])
@@ -39,7 +39,6 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
             }
             self.setViewControllers([self.getViewControllerAtIndex(0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         }
-        debugPrint(R)
     }
     
     // MARK:- UIPageViewControllerDataSource Methods
