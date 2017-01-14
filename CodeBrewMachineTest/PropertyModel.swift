@@ -18,6 +18,7 @@ struct PropertyModel: Decodable {
     let propertyImage: String?
     let commentCount: String?
     let favourCount: String?
+    let devName: [String]?
     
     // MARK: - Deserialization
     
@@ -29,6 +30,7 @@ struct PropertyModel: Decodable {
         self.propertyImage = "image" <~~ json
         self.commentCount = "comment_count" <~~ json
         self.favourCount = "favor_count" <~~ json
+        self.devName = "developer_name" <~~ json
         
     }
     

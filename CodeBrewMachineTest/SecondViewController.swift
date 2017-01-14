@@ -26,15 +26,16 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
 
     func propertyFeed() {
         
-        let R  = Alamofire.request(.POST,  "http://54.254.204.73/api/property/feeds", parameters: ["lang": 20], encoding: .URLEncodedInURL, headers: nil).responseJSON { (request, response, data) in
+        let R  = Alamofire.request(.POST,  "http://54.254.204.73/api/property/feeds", parameters: ["lang": 0], encoding: .URLEncodedInURL, headers: nil).responseJSON { (request, response, data) in
             
             self.dataSource = self
             let jsonArray = GlossDataResponse<PropertyModel>(json: data.value as! [String: AnyObject])
          
+            
             for (index, item ) in jsonArray!.arrayValue!.enumerate() {
                
                 self.imagesArray.append(item)
-                 print(self.imagesArray)
+                 print("\(index)", self.imagesArray)
             }
             self.setViewControllers([self.getViewControllerAtIndex(0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         }
@@ -54,12 +55,11 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
             return nil
         }
         
-        index--;
+        index -= 1;
         return getViewControllerAtIndex(index)
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
-    {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         let pageContent: PageContentViewController = viewController as! PageContentViewController
         
         var index = pageContent.pageIndex
@@ -69,7 +69,7 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
             return nil;
         }
         
-        index++;
+        index += 1;
         if (index == imagesArray.count)
         {
             return nil;
@@ -78,17 +78,17 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
     }
     
     // MARK:- Other Methods
-    func getViewControllerAtIndex(index: NSInteger) -> PageContentViewController
-    {
+    func getViewControllerAtIndex(index: NSInteger) -> PageContentViewController {
         // Create a new view controller and pass suitable data.
         let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageContentViewController") as! PageContentViewController
         
-       pageContentViewController.propertyCountComment = "Comment Count:\(imagesArray[index].commentCount!)  Favour Count:\(imagesArray[index].favourCount!)"
+        print(imagesArray[index].propertyName)
+        pageContentViewController.name_Property =  imagesArray[index].propertyName! + "\n" + imagesArray[index].districtName! + "\n" + imagesArray[index].saleDate!
+       pageContentViewController.propertyCountComment = "Comment:\(imagesArray[index].commentCount!) Favour:\(imagesArray[index].favourCount!)"
         pageContentViewController.propertyImage = "\(imagesArray[index].propertyImage!)"
         pageContentViewController.pageIndex = index
+        pageContentViewController.devName = imagesArray[index].devName![0]
         
         return pageContentViewController
     }
 }
-
-

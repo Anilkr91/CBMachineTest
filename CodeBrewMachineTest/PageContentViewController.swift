@@ -12,16 +12,21 @@ import Kingfisher
 class PageContentViewController: UIViewController {
     
    @IBOutlet weak var countCommentLabel: UILabel!
+    @IBOutlet weak var developerName: UILabel!
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
     var pageIndex: Int = 0
     var propertyCountComment: String!
     var propertyImage: String!
+    var name_Property: String!
+    var devName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(propertyImage)
         imageView.kf_setImageWithURL(NSURL(string: propertyImage))
-        countCommentLabel.text =  propertyCountComment 
+        countCommentLabel.text =  propertyCountComment
+        name.text = name_Property
+        developerName.text = devName
     }
 }
