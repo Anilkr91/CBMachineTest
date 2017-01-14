@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (2.0.2)
   - Gloss (0.8.0)
+  - Kingfisher (2.6.1)
 
 DEPENDENCIES:
   - Alamofire (~> 2.0)
   - Gloss (~> 0.8)
+  - Kingfisher (~> 2.4)
 
 SPEC CHECKSUMS:
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
   Gloss: 866551a47ff84c9875c8dc32255c5b52c070280d
+  Kingfisher: 7e5515bf6c4f2acad91f6400955d2257549cab7b
 
-PODFILE CHECKSUM: cdeab384d77e92d06ac4dd038833c7eebc9d9103
+PODFILE CHECKSUM: c86a9d55c74633b80598e36b25e32f33448c3bc6
 
 COCOAPODS: 1.0.1

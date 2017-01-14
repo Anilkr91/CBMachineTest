@@ -1,25 +1,59 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XCG-ib-lun">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Page Content View Controller-->
+        <scene sceneID="pch-ZI-JiG">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageContentViewController" id="a6W-6c-llZ" customClass="PageContentViewController" customModule="CodeBrewMachineTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="irw-RH-xHO"/>
+                        <viewControllerLayoutGuide type="bottom" id="kWm-1u-uyF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="hZB-Ed-8av">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30l-L4-Txi">
+                                <rect key="frame" x="0.0" y="571" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="euH-fL-UQE">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="30l-L4-Txi" firstAttribute="leading" secondItem="hZB-Ed-8av" secondAttribute="leading" id="0Xd-Ej-8Na"/>
+                            <constraint firstAttribute="trailing" secondItem="30l-L4-Txi" secondAttribute="trailing" id="4cL-Q8-S7m"/>
+                            <constraint firstItem="kWm-1u-uyF" firstAttribute="top" secondItem="euH-fL-UQE" secondAttribute="bottom" id="HD0-Jc-w2g"/>
+                            <constraint firstItem="kWm-1u-uyF" firstAttribute="top" secondItem="30l-L4-Txi" secondAttribute="bottom" constant="8" id="JCM-dj-dhM"/>
+                            <constraint firstItem="euH-fL-UQE" firstAttribute="top" secondItem="irw-RH-xHO" secondAttribute="bottom" id="eQ3-RO-gdA"/>
+                            <constraint firstAttribute="trailing" secondItem="euH-fL-UQE" secondAttribute="trailing" id="ppb-9K-nF6"/>
+                            <constraint firstItem="euH-fL-UQE" firstAttribute="leading" secondItem="hZB-Ed-8av" secondAttribute="leading" id="rhj-WG-Asj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countCommentLabel" destination="30l-L4-Txi" id="3U5-NE-Vmx"/>
+                        <outlet property="imageView" destination="euH-fL-UQE" id="KOE-3n-D5S"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTe-LK-Hfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="326" y="-122"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="DZF-mF-fON">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="XCG-ib-lun" customClass="SecondViewController" customModule="CodeBrewMachineTest" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSf-PL-E31" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="-122"/>
         </scene>
     </scenes>
 </document>
