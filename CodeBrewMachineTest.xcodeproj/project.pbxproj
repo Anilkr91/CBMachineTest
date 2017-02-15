@@ -12,6 +12,7 @@
 		9E0199181E29527B006665BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0199171E29527B006665BA /* Assets.xcassets */; };
 		9E01991B1E29527B006665BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0199191E29527B006665BA /* LaunchScreen.storyboard */; };
 		9E2F1DC01E5472F100126E4E /* PropertyService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1DBF1E5472F100126E4E /* PropertyService+GET.swift */; };
+		9E2F1DC21E54809200126E4E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1DC11E54809200126E4E /* Service.swift */; };
 		9EA37E8C1E2A6FBD00875E77 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E871E2A6FBD00875E77 /* PageContentViewController.swift */; };
 		9EA37E8D1E2A6FBD00875E77 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E881E2A6FBD00875E77 /* SecondViewController.swift */; };
 		9EA37E8E1E2A6FBD00875E77 /* GlossResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E8A1E2A6FBD00875E77 /* GlossResponse.swift */; };
@@ -28,6 +29,7 @@
 		9E01991A1E29527B006665BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E01991C1E29527B006665BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2F1DBF1E5472F100126E4E /* PropertyService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyService+GET.swift"; sourceTree = "<group>"; };
+		9E2F1DC11E54809200126E4E /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		9EA37E871E2A6FBD00875E77 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		9EA37E881E2A6FBD00875E77 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9EA37E8A1E2A6FBD00875E77 /* GlossResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossResponse.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				9E2F1DBE1E5472F100126E4E /* Services */,
 				9EA37E891E2A6FBD00875E77 /* Model */,
 				9EA37E861E2A6FBD00875E77 /* Controllers */,
+				9E2F1DC11E54809200126E4E /* Service.swift */,
 			);
 			path = CodeBrewMachineTest;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA37E8D1E2A6FBD00875E77 /* SecondViewController.swift in Sources */,
+				9E2F1DC21E54809200126E4E /* Service.swift in Sources */,
 				9EA37E8E1E2A6FBD00875E77 /* GlossResponse.swift in Sources */,
 				9E0199111E29527B006665BA /* AppDelegate.swift in Sources */,
 				9E2F1DC01E5472F100126E4E /* PropertyService+GET.swift in Sources */,
