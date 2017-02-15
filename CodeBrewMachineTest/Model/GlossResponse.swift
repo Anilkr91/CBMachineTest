@@ -14,13 +14,10 @@ struct GlossDataResponse<T: Decodable>: Glossy {
     let msg: Int?
     var arrayValue: [T]?
     
-
-    
     init?(json: JSON) {
         self.success  = "success" <~~ json
         self.msg = "msg" <~~ json
         self.arrayValue = "feeds" <~~ json
-        
     }
     
     func toJSON() -> JSON? {
@@ -28,7 +25,6 @@ struct GlossDataResponse<T: Decodable>: Glossy {
             "success" ~~> self.success,
             "msg" ~~> self.msg,
             "feeds" ~~> self.arrayValue,
-            
             ])
     }
 }

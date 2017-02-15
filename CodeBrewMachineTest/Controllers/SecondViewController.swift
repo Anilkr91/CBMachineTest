@@ -15,7 +15,6 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
     var imagesArray : [PropertyModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-    
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -24,22 +23,12 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
     }
 
     func propertyFeed() {
-        
-     let R =    Alamofire.request(.POST,  "http://54.254.204.73/api/property/feeds", parameters: ["lang": 0], encoding: .URLEncodedInURL, headers: nil).responseJSON { (request, response, data) in
-            
+        PropertyGETService.getProperty(["lang": 0]) { (json) in
             self.dataSource = self
-            let jsonArray = GlossDataResponse<PropertyModel>(json: data.value as! [String: AnyObject])
-        self.imagesArray = (jsonArray?.arrayValue)!
-//         print(jsonArray?.arrayValue?.count)
-        
-//            for (index, item ) in jsonArray!.arrayValue!.enumerate() {
-//               
-//                self.imagesArray.append(item)
-//                 print("\(index)", self.imagesArray)
-//            }
-            self.setViewControllers([self.getViewControllerAtIndex(0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+            let jsonArray = GlossDataResponse<PropertyModel>(json: json as! [String: AnyObject])
+            self.imagesArray = (jsonArray?.arrayValue)!
+             self.setViewControllers([self.getViewControllerAtIndex(0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         }
-        debugPrint(R)
     }
     
     // MARK:- UIPageViewControllerDataSource Methods
@@ -50,28 +39,24 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
         
         var index = pageContent.pageIndex
         
-        if ((index == 0) || (index == NSNotFound))
-        {
+        if ((index == 0) || (index == NSNotFound)) {
             return nil
         }
-        
         index -= 1;
         return getViewControllerAtIndex(index)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+       
         let pageContent: PageContentViewController = viewController as! PageContentViewController
-        
         var index = pageContent.pageIndex
         
-        if (index == NSNotFound)
-        {
+        if (index == NSNotFound) {
             return nil;
         }
         
         index += 1;
-        if (index == imagesArray.count)
-        {
+        if (index == imagesArray.count) {
             return nil;
         }
         return getViewControllerAtIndex(index)
@@ -80,17 +65,12 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
     // MARK:- Other Methods
     func getViewControllerAtIndex(index: NSInteger) -> PageContentViewController {
         // Create a new view controller and pass suitable data.
-        print(index)
-        print(Int)
         let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageContentViewController") as! PageContentViewController
-        
-        print(imagesArray[index].propertyName!)
         pageContentViewController.name_Property =  imagesArray[index].propertyName! + "\n" + imagesArray[index].districtName! + "\n" + imagesArray[index].saleDate!
        pageContentViewController.propertyCountComment = "Comment:\(imagesArray[index].commentCount!) Favour:\(imagesArray[index].favourCount!)"
         pageContentViewController.propertyImage = "\(imagesArray[index].propertyImage!)"
         pageContentViewController.pageIndex = index
         pageContentViewController.devName = imagesArray[index].devName![0]
-        
         return pageContentViewController
     }
 }
