@@ -37,7 +37,6 @@ class TodoListingTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Todo", forIndexPath: indexPath)
-        
         cell.textLabel!.text = (array[indexPath.row].name!)
         cell.detailTextLabel!.text = array[indexPath.row].desc
         

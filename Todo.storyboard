@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Todo Listing Table View Controller-->
+        <!--Todo List-->
         <scene sceneID="O4h-2H-Oeh">
             <objects>
                 <tableViewController id="837-e7-e78" customClass="TodoListingTableViewController" customModule="CodeBrewMachineTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                             <outlet property="delegate" destination="837-e7-e78" id="VY1-ol-dMv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hgk-yv-EB2">
+                    <navigationItem key="navigationItem" title="Todo List" id="hgk-yv-EB2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JDF-yM-zrD">
                             <connections>
                                 <segue destination="1ah-qL-PaL" kind="show" id="AGm-Ha-EHG"/>
@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="1767" y="297"/>
         </scene>
-        <!--Todolist View Controller-->
+        <!--Add todo-->
         <scene sceneID="n5a-rj-NwD">
             <objects>
                 <viewController id="1ah-qL-PaL" customClass="TodolistViewController" customModule="CodeBrewMachineTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                             <constraint firstItem="zjD-UB-6bS" firstAttribute="leading" secondItem="H5a-nS-5Sb" secondAttribute="leadingMargin" constant="10" id="mnS-iW-ZS1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XhG-WM-mHV"/>
+                    <navigationItem key="navigationItem" title="Add todo" id="XhG-WM-mHV"/>
                     <connections>
                         <outlet property="saveTodoButton" destination="eMu-PS-kXg" id="DUz-fK-Wuu"/>
                         <outlet property="taskDescTextfield" destination="zjD-UB-6bS" id="bqO-cv-dbY"/>
