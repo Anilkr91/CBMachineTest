@@ -34,6 +34,11 @@ class TodoListingTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Todo", forIndexPath: indexPath)
+        if indexPath.row%2 == 0 {
+            cell.backgroundColor = UIColor.purpleColor()
+        } else {
+            cell.backgroundColor = UIColor.brownColor()
+        }
         cell.textLabel!.text = array[indexPath.row].name!
         cell.detailTextLabel!.text = array[indexPath.row].desc
         
