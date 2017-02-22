@@ -20,9 +20,12 @@ class TodoListingTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         array.removeAll()
-        fetchCoreDataEntity()
-        tableView.reloadData()
+        //        fetchCoreDataEntity()
+        //        array = CoreDataUtils.readEntity("Todo") as! [TodoModel]
+        iterateEntity(CoreDataUtils.readEntity("Todo"))
+        //        print("\(array[0].name)")
     }
+    
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -35,33 +38,42 @@ class TodoListingTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Todo", forIndexPath: indexPath)
         
-        cell.textLabel!.text = array[indexPath.row].name
+        cell.textLabel!.text = (array[indexPath.row].name!)
         cell.detailTextLabel!.text = array[indexPath.row].desc
+        
         return cell
     }
     
-    func fetchCoreDataEntity()  {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
-        // Initialize Fetch Request
-        let fetchRequest = NSFetchRequest()
-        
-        // Create Entity Description
-        let entityDescription = NSEntityDescription.entityForName("Todo", inManagedObjectContext: managedContext)
-        
-        // Configure Fetch Request
-        fetchRequest.entity = entityDescription
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
     
-        do {
-            let results = try managedContext.executeFetchRequest(fetchRequest)
-            for (k,v) in results.enumerate() {
-                let todoObj = TodoModel(name: v.valueForKey("name") as? String, desc: v.valueForKey("desc") as? String, date: v.valueForKey("date") as? NSDate)
-                 array.append(todoObj)
-            }
-        } catch {
-            let fetchError = error as NSError
-            print(fetchError)
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            print("delete called \(indexPath.row)")
+            deleteTodoFromCoreData(array[indexPath.row],todoArray: CoreDataUtils.readEntity("Todo"))
         }
     }
     
+    //Mark: Read core data objects
+    func iterateEntity(todoArray: [AnyObject]) {
+        for (_,v) in todoArray.enumerate() {
+            let todoObj = TodoModel(name: v.valueForKey("name") as? String, desc: v.valueForKey("desc") as? String, date: v.valueForKey("date") as? NSDate)
+            array.append(todoObj)
+        }
+        tableView.reloadData()
+    }
+    
+    
+    func deleteTodoFromCoreData(object: TodoModel, todoArray: [AnyObject]) {
+        
+        for (_,v) in todoArray.enumerate() {
+            if object.name == v.valueForKey("name") as? String {
+                print(v)
+                CoreDataUtils.getContext().deleteObject(v as! NSManagedObject)
+            }
+        }
+        array.removeAll()
+        iterateEntity(CoreDataUtils.readEntity("Todo"))
+    }
 }
