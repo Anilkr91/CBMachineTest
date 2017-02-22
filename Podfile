@@ -8,5 +8,6 @@ target 'CodeBrewMachineTest' do
   pod 'Alamofire', '~> 2.0'
   pod 'Gloss', '~> 0.8'
   pod 'Kingfisher', '~> 2.4'
+  pod 'IQKeyboardManager'
 
 end

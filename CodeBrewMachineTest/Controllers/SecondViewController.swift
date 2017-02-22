@@ -33,8 +33,7 @@ class SecondViewController: UIPageViewController, UIPageViewControllerDataSource
     
     // MARK:- UIPageViewControllerDataSource Methods
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
-    {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         let pageContent: PageContentViewController = viewController as! PageContentViewController
         
         var index = pageContent.pageIndex
