@@ -15,29 +15,24 @@ class TodolistViewController: UIViewController {
     @IBOutlet weak var taskDescTextfield: UITextField!
     @IBOutlet weak var saveTodoButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        saveTodoButton.backgroundColor = UIColor.redColor()
         saveTodoButton.addTarget(self, action: #selector(TodolistViewController.saveTodo(_:)), forControlEvents: .TouchUpInside)
-        //        taskTextfield.delegate = self
-        //        taskDescTextfield.delegate = self
-        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     }
     
-    
     func saveTodo(sender: UIButton) {
-        
-        if taskTextfield.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).isEmpty {
+        let task = taskTextfield.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        let desc = taskDescTextfield.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+       
+        if task.isEmpty  {
             print("empty please fill")
-        } else if taskTextfield.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).isEmpty {
+        } else if desc.isEmpty {
             print("empty please fill")
         } else {
-            
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             let managedContext = appDelegate.managedObjectContext
             
@@ -46,14 +41,13 @@ class TodolistViewController: UIViewController {
             let todo = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
             
             //3
-            todo.setValue(taskTextfield.text, forKey: "name")
-            todo.setValue(taskDescTextfield.text, forKey: "desc")
+            todo.setValue(task, forKey: "name")
+            todo.setValue(desc, forKey: "desc")
             todo.setValue(NSDate(), forKey: "date")
             //4
             do {
                 try managedContext.save()
                 //5
-                //user.append(person)
                 self.navigationController?.popViewControllerAnimated(true)
                 
             } catch let error as NSError  {
@@ -62,23 +56,3 @@ class TodolistViewController: UIViewController {
         }
     }
 }
-
-//extension TodolistViewController: UITextFieldDelegate {
-//
-//    func textFieldDidEndEditing(textField: UITextField) {
-//
-//        if taskTextfield.hasText() && taskDescTextfield.hasText() {
-//              saveTodoButton.addTarget(self, action: #selector(TodolistViewController.saveTodo(_:)), forControlEvents: .TouchUpInside)
-//            saveTodoButton.enabled = true
-//            saveTodoButton.backgroundColor = UIColor.greenColor()
-//            print(taskDescTextfield.text)
-//            print(taskTextfield.text)
-//        }
-//    }
-//
-//    func textFieldShouldReturn(textField: UITextField) -> Bool {
-//        textField.resignFirstResponder()
-//        return true
-//    }
-//    
-//}

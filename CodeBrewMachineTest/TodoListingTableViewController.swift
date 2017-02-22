@@ -19,7 +19,9 @@ class TodoListingTableViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        array.removeAll()
         fetchCoreDataEntity()
+        tableView.reloadData()
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
