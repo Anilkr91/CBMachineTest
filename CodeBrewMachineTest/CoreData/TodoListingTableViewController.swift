@@ -20,10 +20,7 @@ class TodoListingTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         array.removeAll()
-        //        fetchCoreDataEntity()
-        //        array = CoreDataUtils.readEntity("Todo") as! [TodoModel]
         iterateEntity(CoreDataUtils.readEntity("Todo"))
-        //        print("\(array[0].name)")
     }
     
     
@@ -37,7 +34,7 @@ class TodoListingTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Todo", forIndexPath: indexPath)
-        cell.textLabel!.text = (array[indexPath.row].name!)
+        cell.textLabel!.text = array[indexPath.row].name!
         cell.detailTextLabel!.text = array[indexPath.row].desc
         
         return cell
@@ -72,7 +69,13 @@ class TodoListingTableViewController: UITableViewController {
                 CoreDataUtils.getContext().deleteObject(v as! NSManagedObject)
             }
         }
-        array.removeAll()
-        iterateEntity(CoreDataUtils.readEntity("Todo"))
+        do {
+            try CoreDataUtils.getContext().save()
+            array.removeAll()
+            iterateEntity(CoreDataUtils.readEntity("Todo"))
+            
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
     }
 }

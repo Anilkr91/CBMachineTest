@@ -33,12 +33,12 @@ class TodolistViewController: UIViewController {
         } else if desc.isEmpty {
             print("empty please fill")
         } else {
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            let managedContext = appDelegate.managedObjectContext
+//            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//            let managedContext = appDelegate.managedObjectContext
             
             //2
-            let entity =  NSEntityDescription.entityForName("Todo", inManagedObjectContext: managedContext)
-            let todo = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+            let entity =  NSEntityDescription.entityForName("Todo", inManagedObjectContext: CoreDataUtils.getContext())
+            let todo = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: CoreDataUtils.getContext())
             
             //3
             todo.setValue(task, forKey: "name")
@@ -46,7 +46,7 @@ class TodolistViewController: UIViewController {
             todo.setValue(NSDate(), forKey: "date")
             //4
             do {
-                try managedContext.save()
+                try CoreDataUtils.getContext().save()
                 //5
                 self.navigationController?.popViewControllerAnimated(true)
                 
