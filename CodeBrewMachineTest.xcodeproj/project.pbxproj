@@ -20,6 +20,7 @@
 		9E2F1E181E5D93B200126E4E /* TodolistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E121E5D93B200126E4E /* TodolistViewController.swift */; };
 		9E2F1E191E5D93B200126E4E /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E131E5D93B200126E4E /* TodoModel.swift */; };
 		9E2F1E1B1E5DB54F00126E4E /* CoreData+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E1A1E5DB54F00126E4E /* CoreData+Helper.swift */; };
+		9E2F1E1D1E5EB9CC00126E4E /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E1C1E5EB9CC00126E4E /* ExtensionHelpers.swift */; };
 		9EA37E8C1E2A6FBD00875E77 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E871E2A6FBD00875E77 /* PageContentViewController.swift */; };
 		9EA37E8D1E2A6FBD00875E77 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E881E2A6FBD00875E77 /* SecondViewController.swift */; };
 		9EA37E8E1E2A6FBD00875E77 /* GlossResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E8A1E2A6FBD00875E77 /* GlossResponse.swift */; };
@@ -44,6 +45,7 @@
 		9E2F1E121E5D93B200126E4E /* TodolistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodolistViewController.swift; sourceTree = "<group>"; };
 		9E2F1E131E5D93B200126E4E /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		9E2F1E1A1E5DB54F00126E4E /* CoreData+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreData+Helper.swift"; sourceTree = "<group>"; };
+		9E2F1E1C1E5EB9CC00126E4E /* ExtensionHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 		9EA37E871E2A6FBD00875E77 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		9EA37E881E2A6FBD00875E77 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9EA37E8A1E2A6FBD00875E77 /* GlossResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossResponse.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				9EA37E891E2A6FBD00875E77 /* Model */,
 				9EA37E861E2A6FBD00875E77 /* Controllers */,
 				9E2F1E1A1E5DB54F00126E4E /* CoreData+Helper.swift */,
+				9E2F1E1C1E5EB9CC00126E4E /* ExtensionHelpers.swift */,
 			);
 			path = CodeBrewMachineTest;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				9E2F1E141E5D93B200126E4E /* CodeBrewMachineTest.xcdatamodeld in Sources */,
 				9E2F1E151E5D93B200126E4E /* Todo+CoreDataProperties.swift in Sources */,
 				9E2F1E161E5D93B200126E4E /* Todo.swift in Sources */,
+				9E2F1E1D1E5EB9CC00126E4E /* ExtensionHelpers.swift in Sources */,
 				9E0199111E29527B006665BA /* AppDelegate.swift in Sources */,
 				9E2F1E171E5D93B200126E4E /* TodoListingTableViewController.swift in Sources */,
 				9E2F1DC01E5472F100126E4E /* PropertyService+GET.swift in Sources */,

@@ -25,8 +25,12 @@ class TodolistViewController: UIViewController {
     }
     
     func saveTodo(sender: UIButton) {
-        let task = taskTextfield.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        let desc = taskDescTextfield.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        
+        let task  = taskTextfield.text!.removeAllSpaces()
+        let desc = taskDescTextfield.text!.removeAllSpaces()
+        
+//        let task = taskTextfield.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).stringByReplacingOccurrencesOfString(" ", withString: "")
+//        let desc = taskDescTextfield.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).stringByReplacingOccurrencesOfString(" ", withString: "")
        
         if task.isEmpty  {
             print("empty please fill")
