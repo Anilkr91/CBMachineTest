@@ -12,21 +12,21 @@
 		9E0199181E29527B006665BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0199171E29527B006665BA /* Assets.xcassets */; };
 		9E01991B1E29527B006665BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0199191E29527B006665BA /* LaunchScreen.storyboard */; };
 		9E2F1DC01E5472F100126E4E /* PropertyService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1DBF1E5472F100126E4E /* PropertyService+GET.swift */; };
-		9E2F1DC41E5C08E300126E4E /* Todo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2F1DC31E5C08E300126E4E /* Todo.storyboard */; };
 		9E2F1E141E5D93B200126E4E /* CodeBrewMachineTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E0D1E5D93B200126E4E /* CodeBrewMachineTest.xcdatamodeld */; };
 		9E2F1E151E5D93B200126E4E /* Todo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E0F1E5D93B200126E4E /* Todo+CoreDataProperties.swift */; };
 		9E2F1E161E5D93B200126E4E /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E101E5D93B200126E4E /* Todo.swift */; };
 		9E2F1E171E5D93B200126E4E /* TodoListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E111E5D93B200126E4E /* TodoListingTableViewController.swift */; };
 		9E2F1E181E5D93B200126E4E /* TodolistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E121E5D93B200126E4E /* TodolistViewController.swift */; };
 		9E2F1E191E5D93B200126E4E /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E131E5D93B200126E4E /* TodoModel.swift */; };
-		9E2F1E1B1E5DB54F00126E4E /* CoreData+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E1A1E5DB54F00126E4E /* CoreData+Helper.swift */; };
-		9E2F1E1D1E5EB9CC00126E4E /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E1C1E5EB9CC00126E4E /* ExtensionHelpers.swift */; };
-		9E2F1E1F1E5EE90C00126E4E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E1E1E5EE90C00126E4E /* UserModel.swift */; };
-		9E2F1E211E5EE9C800126E4E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E201E5EE9C800126E4E /* LoginModel.swift */; };
-		9E2F1E231E5EE9E900126E4E /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E221E5EE9E900126E4E /* AddressModel.swift */; };
-		9E2F1E251E5EECC300126E4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E241E5EECC300126E4E /* LoginViewController.swift */; };
-		9E2F1E271E5F09F400126E4E /* UserDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E261E5F09F400126E4E /* UserDetailTableViewController.swift */; };
-		9E2F1E291E5F470100126E4E /* UsersDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E281E5F470100126E4E /* UsersDummyData.swift */; };
+		9E2F1E301E5F616500126E4E /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E2B1E5F616500126E4E /* AddressModel.swift */; };
+		9E2F1E311E5F616500126E4E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E2C1E5F616500126E4E /* LoginModel.swift */; };
+		9E2F1E321E5F616500126E4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E2D1E5F616500126E4E /* LoginViewController.swift */; };
+		9E2F1E331E5F616500126E4E /* UserDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E2E1E5F616500126E4E /* UserDetailTableViewController.swift */; };
+		9E2F1E341E5F616500126E4E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E2F1E5F616500126E4E /* UserModel.swift */; };
+		9E2F1E391E5F61C900126E4E /* CoreData+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E361E5F61C900126E4E /* CoreData+Helper.swift */; };
+		9E2F1E3A1E5F61C900126E4E /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E371E5F61C900126E4E /* ExtensionHelpers.swift */; };
+		9E2F1E3B1E5F61C900126E4E /* UsersDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F1E381E5F61C900126E4E /* UsersDummyData.swift */; };
+		9E2F1E3E1E5F61FE00126E4E /* Todo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2F1E3C1E5F61FE00126E4E /* Todo.storyboard */; };
 		9EA37E8C1E2A6FBD00875E77 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E871E2A6FBD00875E77 /* PageContentViewController.swift */; };
 		9EA37E8D1E2A6FBD00875E77 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E881E2A6FBD00875E77 /* SecondViewController.swift */; };
 		9EA37E8E1E2A6FBD00875E77 /* GlossResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA37E8A1E2A6FBD00875E77 /* GlossResponse.swift */; };
@@ -43,21 +43,21 @@
 		9E01991A1E29527B006665BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E01991C1E29527B006665BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2F1DBF1E5472F100126E4E /* PropertyService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyService+GET.swift"; sourceTree = "<group>"; };
-		9E2F1DC31E5C08E300126E4E /* Todo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Todo.storyboard; path = ../Todo.storyboard; sourceTree = "<group>"; };
 		9E2F1E0E1E5D93B200126E4E /* CodeBrewMachineTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodeBrewMachineTest.xcdatamodel; sourceTree = "<group>"; };
 		9E2F1E0F1E5D93B200126E4E /* Todo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9E2F1E101E5D93B200126E4E /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		9E2F1E111E5D93B200126E4E /* TodoListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListingTableViewController.swift; sourceTree = "<group>"; };
 		9E2F1E121E5D93B200126E4E /* TodolistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodolistViewController.swift; sourceTree = "<group>"; };
 		9E2F1E131E5D93B200126E4E /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
-		9E2F1E1A1E5DB54F00126E4E /* CoreData+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreData+Helper.swift"; sourceTree = "<group>"; };
-		9E2F1E1C1E5EB9CC00126E4E /* ExtensionHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
-		9E2F1E1E1E5EE90C00126E4E /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		9E2F1E201E5EE9C800126E4E /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		9E2F1E221E5EE9E900126E4E /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
-		9E2F1E241E5EECC300126E4E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9E2F1E261E5F09F400126E4E /* UserDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDetailTableViewController.swift; path = Controllers/UserDetailTableViewController.swift; sourceTree = "<group>"; };
-		9E2F1E281E5F470100126E4E /* UsersDummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersDummyData.swift; path = Controllers/UsersDummyData.swift; sourceTree = "<group>"; };
+		9E2F1E2B1E5F616500126E4E /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		9E2F1E2C1E5F616500126E4E /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		9E2F1E2D1E5F616500126E4E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9E2F1E2E1E5F616500126E4E /* UserDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewController.swift; sourceTree = "<group>"; };
+		9E2F1E2F1E5F616500126E4E /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9E2F1E361E5F61C900126E4E /* CoreData+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreData+Helper.swift"; sourceTree = "<group>"; };
+		9E2F1E371E5F61C900126E4E /* ExtensionHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		9E2F1E381E5F61C900126E4E /* UsersDummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersDummyData.swift; sourceTree = "<group>"; };
+		9E2F1E3D1E5F61FE00126E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Todo.storyboard; sourceTree = "<group>"; };
 		9EA37E871E2A6FBD00875E77 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		9EA37E881E2A6FBD00875E77 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9EA37E8A1E2A6FBD00875E77 /* GlossResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossResponse.swift; sourceTree = "<group>"; };
@@ -116,21 +116,18 @@
 		9E01990F1E29527B006665BA /* CodeBrewMachineTest */ = {
 			isa = PBXGroup;
 			children = (
+				9E2F1E3C1E5F61FE00126E4E /* Todo.storyboard */,
 				9E0199101E29527B006665BA /* AppDelegate.swift */,
-				9E2F1DC31E5C08E300126E4E /* Todo.storyboard */,
 				9E0199141E29527B006665BA /* Main.storyboard */,
 				9E0199171E29527B006665BA /* Assets.xcassets */,
 				9E0199191E29527B006665BA /* LaunchScreen.storyboard */,
 				9E01991C1E29527B006665BA /* Info.plist */,
+				9E2F1E351E5F61C900126E4E /* Helpers */,
+				9E2F1E2A1E5F616500126E4E /* LoginUpdateUser */,
 				9E2F1E0C1E5D93B200126E4E /* CoreData */,
 				9E2F1DBE1E5472F100126E4E /* Services */,
 				9EA37E891E2A6FBD00875E77 /* Model */,
 				9EA37E861E2A6FBD00875E77 /* Controllers */,
-				9E2F1E1A1E5DB54F00126E4E /* CoreData+Helper.swift */,
-				9E2F1E281E5F470100126E4E /* UsersDummyData.swift */,
-				9E2F1E1C1E5EB9CC00126E4E /* ExtensionHelpers.swift */,
-				9E2F1E261E5F09F400126E4E /* UserDetailTableViewController.swift */,
-				9E2F1E241E5EECC300126E4E /* LoginViewController.swift */,
 			);
 			path = CodeBrewMachineTest;
 			sourceTree = "<group>";
@@ -156,6 +153,28 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		9E2F1E2A1E5F616500126E4E /* LoginUpdateUser */ = {
+			isa = PBXGroup;
+			children = (
+				9E2F1E2B1E5F616500126E4E /* AddressModel.swift */,
+				9E2F1E2C1E5F616500126E4E /* LoginModel.swift */,
+				9E2F1E2D1E5F616500126E4E /* LoginViewController.swift */,
+				9E2F1E2E1E5F616500126E4E /* UserDetailTableViewController.swift */,
+				9E2F1E2F1E5F616500126E4E /* UserModel.swift */,
+			);
+			path = LoginUpdateUser;
+			sourceTree = "<group>";
+		};
+		9E2F1E351E5F61C900126E4E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9E2F1E361E5F61C900126E4E /* CoreData+Helper.swift */,
+				9E2F1E371E5F61C900126E4E /* ExtensionHelpers.swift */,
+				9E2F1E381E5F61C900126E4E /* UsersDummyData.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9EA37E861E2A6FBD00875E77 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,9 +189,6 @@
 			children = (
 				9EA37E8A1E2A6FBD00875E77 /* GlossResponse.swift */,
 				9EA37E8B1E2A6FBD00875E77 /* PropertyModel.swift */,
-				9E2F1E1E1E5EE90C00126E4E /* UserModel.swift */,
-				9E2F1E201E5EE9C800126E4E /* LoginModel.swift */,
-				9E2F1E221E5EE9E900126E4E /* AddressModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,7 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E2F1DC41E5C08E300126E4E /* Todo.storyboard in Resources */,
+				9E2F1E3E1E5F61FE00126E4E /* Todo.storyboard in Resources */,
 				9E01991B1E29527B006665BA /* LaunchScreen.storyboard in Resources */,
 				9E0199181E29527B006665BA /* Assets.xcassets in Resources */,
 				9E0199161E29527B006665BA /* Main.storyboard in Resources */,
@@ -300,25 +316,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E2F1E251E5EECC300126E4E /* LoginViewController.swift in Sources */,
-				9E2F1E271E5F09F400126E4E /* UserDetailTableViewController.swift in Sources */,
+				9E2F1E321E5F616500126E4E /* LoginViewController.swift in Sources */,
+				9E2F1E331E5F616500126E4E /* UserDetailTableViewController.swift in Sources */,
 				9EA37E8D1E2A6FBD00875E77 /* SecondViewController.swift in Sources */,
-				9E2F1E291E5F470100126E4E /* UsersDummyData.swift in Sources */,
+				9E2F1E3B1E5F61C900126E4E /* UsersDummyData.swift in Sources */,
 				9EA37E8E1E2A6FBD00875E77 /* GlossResponse.swift in Sources */,
+				9E2F1E391E5F61C900126E4E /* CoreData+Helper.swift in Sources */,
 				9E2F1E141E5D93B200126E4E /* CodeBrewMachineTest.xcdatamodeld in Sources */,
+				9E2F1E301E5F616500126E4E /* AddressModel.swift in Sources */,
 				9E2F1E151E5D93B200126E4E /* Todo+CoreDataProperties.swift in Sources */,
 				9E2F1E161E5D93B200126E4E /* Todo.swift in Sources */,
-				9E2F1E211E5EE9C800126E4E /* LoginModel.swift in Sources */,
-				9E2F1E1D1E5EB9CC00126E4E /* ExtensionHelpers.swift in Sources */,
+				9E2F1E311E5F616500126E4E /* LoginModel.swift in Sources */,
 				9E0199111E29527B006665BA /* AppDelegate.swift in Sources */,
 				9E2F1E171E5D93B200126E4E /* TodoListingTableViewController.swift in Sources */,
 				9E2F1DC01E5472F100126E4E /* PropertyService+GET.swift in Sources */,
 				9E2F1E191E5D93B200126E4E /* TodoModel.swift in Sources */,
-				9E2F1E1B1E5DB54F00126E4E /* CoreData+Helper.swift in Sources */,
 				9EA37E8C1E2A6FBD00875E77 /* PageContentViewController.swift in Sources */,
 				9EA37E8F1E2A6FBD00875E77 /* PropertyModel.swift in Sources */,
-				9E2F1E231E5EE9E900126E4E /* AddressModel.swift in Sources */,
-				9E2F1E1F1E5EE90C00126E4E /* UserModel.swift in Sources */,
+				9E2F1E341E5F616500126E4E /* UserModel.swift in Sources */,
+				9E2F1E3A1E5F61C900126E4E /* ExtensionHelpers.swift in Sources */,
 				9E2F1E181E5D93B200126E4E /* TodolistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +356,14 @@
 				9E01991A1E29527B006665BA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9E2F1E3C1E5F61FE00126E4E /* Todo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E2F1E3D1E5F61FE00126E4E /* Base */,
+			);
+			name = Todo.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
