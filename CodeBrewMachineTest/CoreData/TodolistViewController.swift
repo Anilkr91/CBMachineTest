@@ -52,7 +52,8 @@ class TodolistViewController: UIViewController {
             do {
                 try CoreDataUtils.getContext().save()
                 //5
-                self.navigationController?.popViewControllerAnimated(true)
+//                self.navigationController?.popViewControllerAnimated(true)
+                self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
                 
             } catch let error as NSError  {
                 print("Could not save \(error), \(error.userInfo)")

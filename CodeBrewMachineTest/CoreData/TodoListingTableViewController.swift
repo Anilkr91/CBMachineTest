@@ -14,7 +14,6 @@ class TodoListingTableViewController: UITableViewController {
     var array : [TodoModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -22,7 +21,6 @@ class TodoListingTableViewController: UITableViewController {
         array.removeAll()
         iterateEntity(CoreDataUtils.readEntity("Todo"))
     }
-    
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -41,7 +39,6 @@ class TodoListingTableViewController: UITableViewController {
         }
         cell.textLabel!.text = array[indexPath.row].name!
         cell.detailTextLabel!.text = array[indexPath.row].desc
-        
         return cell
     }
     
@@ -65,7 +62,6 @@ class TodoListingTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    
     func deleteTodoFromCoreData(object: TodoModel, todoArray: [AnyObject]) {
         
         for (_,v) in todoArray.enumerate() {
@@ -74,13 +70,10 @@ class TodoListingTableViewController: UITableViewController {
                 CoreDataUtils.getContext().deleteObject(v as! NSManagedObject)
             }
         }
-        do {
-            try CoreDataUtils.getContext().save()
-            array.removeAll()
-            iterateEntity(CoreDataUtils.readEntity("Todo"))
-            
-        } catch let error as NSError  {
-            print("Could not save \(error), \(error.userInfo)")
-        }
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.saveContext()
+        array.removeAll()
+        iterateEntity(CoreDataUtils.readEntity("Todo"))
     }
 }

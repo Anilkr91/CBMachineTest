@@ -24,6 +24,7 @@ class UserDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUserDetail()
+        self.navigationItem.hidesBackButton = true
     }
     
     override func viewWillAppear(animated: Bool) {

@@ -116,11 +116,11 @@
 		9E01990F1E29527B006665BA /* CodeBrewMachineTest */ = {
 			isa = PBXGroup;
 			children = (
-				9E2F1E3C1E5F61FE00126E4E /* Todo.storyboard */,
 				9E0199101E29527B006665BA /* AppDelegate.swift */,
+				9E2F1E3C1E5F61FE00126E4E /* Todo.storyboard */,
 				9E0199141E29527B006665BA /* Main.storyboard */,
-				9E0199171E29527B006665BA /* Assets.xcassets */,
 				9E0199191E29527B006665BA /* LaunchScreen.storyboard */,
+				9E0199171E29527B006665BA /* Assets.xcassets */,
 				9E01991C1E29527B006665BA /* Info.plist */,
 				9E2F1E351E5F61C900126E4E /* Helpers */,
 				9E2F1E2A1E5F616500126E4E /* LoginUpdateUser */,
